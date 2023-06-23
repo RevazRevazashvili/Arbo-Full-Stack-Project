@@ -1,0 +1,455 @@
+
+
+/* --------------------------------------------------arbo's webgverdi-------------------------------------------- */
+
+/* ----------------------------* -----------------------------------*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url("../Images/8580-800-x-1555-16-x-14-x-12-mm.jpg");
+    background-size: cover !important;
+    position: relative; */
+    /* background-color: #5B1A15; */
+    background-color: whitesmoke;
+    opacity: 0.9;
+    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+
+/* ---navigation--- */
+.navigation {
+    display: flex; 
+    justify-content: center;
+    padding: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    z-index: 2;
+    font-size: 17px;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    background-color: #751606;
+  }
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.navigation li {
+    margin-right: 10px;
+    float: left;
+  }
+  
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
+  
+.navigation a:hover {
+    background-color: #5B1A15;
+    transition-duration: 1.3s;
+    border-radius: 50px;
+  } 
+
+/* ------------------------------about----------------------------- */
+
+/* --------------header--------------- */
+
+
+.header>h1{
+    width: 73%;
+    padding-top: 40px;
+    float: left;
+    color: white;
+    /* text-align: center; */
+    /* background-color: blueviolet; */
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color:#751606;
+    margin-top: auto;
+}
+.headerPhoto{
+    width: 27%;
+    padding-left: 10%;
+    float: left;
+}
+/* --------------end of header------------- */
+.mainInfo{
+    /* margin: 3% 5% 0 5%; */
+    margin-top: 0;
+    padding-top: 6.25rem;
+    padding-bottom: 3.12rem;
+    background-color: #d4dcf5;
+}
+.mainInfoPhoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo{
+    max-width: 80%;
+    max-height: 100%;
+    margin-bottom: 3.12rem;
+}
+
+.mainInfo h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.mainInfo p{
+    text-align: justify;
+    padding: 0 5rem 0 5rem;
+}
+
+
+
+  /* -------------footer--------------- */
+
+footer{
+    height: 60vh;
+    background-color:#751606;
+}
+.i18n-ka .copyright {
+    font-size: 11px;
+    margin-toP: 13px;
+}
+.copyright > p{
+    padding-top: 12vh;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+/* contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-top: 100px;
+}
+.contact > *{
+    margin-right: 10px;
+}
+
+.email{
+    display: flex;
+}
+.email > p{
+    padding-top: 5px;
+    padding-left: 5px;
+    color: white;
+}
+.call{
+    display: flex;
+}
+.call > p{
+    padding-top: 5px;
+    padding-left: 5px;
+    color: white;
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+}
+.social > *{
+    margin-left: 10px;
+}
+.facebook{
+    margin-left: 0px;
+}
+  /* -------------end of footer--------------- */
+ 
+/* -----------------------------------index------------------------------------------- */
+
+/* -----------calendar------------- */
+
+  /* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapcal{
+  display: flex;
+  justify-content: center;
+  background-color: #9B59B6;
+  width: 25%;
+  
+}
+.wrapper{
+  width: 300px;
+  height: 400px;
+  background: #f2f2f5;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  border-radius: 30px;
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: auto;
+  width: auto;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #960000;
+  text-align: center;
+  line-height: 38px;
+  /* font-size: 1.9rem; */
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background:#751606;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+/* -----------end of calendar------------- */
+
+/* ------------------------------main--------------------------------------- */
+
+
+.dasaflex{
+  display: flex;
+}
+.reading{
+  display: flex;
+  background-color: green;
+  width: 22%;
+  flex-direction: column;
+  padding:1%;
+}
+.indexMainInfo{
+  background-color: yellow;
+  display: flex;
+  width: 53%;
+}
+
+.reading h2{
+  background-color: #cea858;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ------------------------------end of main----------------------------------- */
+
+/* -----------------------------------end of index------------------------------------------- */
+
+
+/* ---------------------------------------------arbo--------------------------------------------- */
+
+
+/* ----------------------main------------------------- */
+.arboInfo{
+  background-color: #d4dcf5;
+}
+.arboImages{
+  width: 35%;
+  justify-content: center;
+  padding: 1%;
+}
+.item1>p{
+width: 100%;
+margin: 2%;
+text-align: justify;
+}
+.item1{
+  display: flex;
+}
+.item2>p{
+  width: 65%;
+  margin: 4%;
+  text-align: justify;
+  }
+.item2{
+  display: flex;
+}
+.item3>p{
+width: 65%;
+margin: 4%;
+text-align: justify;
+}
+.item3{
+  display: flex;
+}
+.item4>p{
+  width: 65%;
+  margin: 4%;
+  text-align: justify;
+  }
+.item4{
+  display: flex;
+}
+.item5>p{
+  width: 65%;
+  margin: 4%;
+  text-align: justify;
+  }
+.item5{
+  display: flex;
+}
+.item6>p{
+width: 65%;
+margin: 4%;
+text-align: justify;
+}
+.item6{
+  display: flex;
+}
+.item7>p{
+  width: 65%;
+  margin: 4%;
+  text-align: justify;
+  }
+.item7{
+  display: flex;
+}
+
+
+.person{
+  display: flex;
+}
+.image{
+  width: 35%;
+  padding: 1.5%;
+}
+.person>p{
+  width: 65%;
+  text-align: justify;
+  padding: 4%;
+}
+.arbooba{
+  margin-top: 5%;
+}
+.arbooba>p{
+  text-align: justify;
+  padding: 2% 5%;
+}
+.arbH{
+  text-align: center;
+}
+/* ----------------------end of main------------------------- */
+
+
+/* ---------------------------------------------end of arbo--------------------------------------------- */
+
+
+
+/* ---------------------------------------------diocise--------------------------------------------- */
+
+/* -------------------------------------main------------------------------------- */
+
+.dioInfo{
+  background-color: #d4dcf5;
+}
+
+.diociseInfo p{
+  width: 60%;
+  padding: 5%;
+}
+.sakatedro{
+  display: flex;
+}
+.meufe{
+  display: flex;
+}
+.diociseIfophoto{
+  width: 40%;
+  padding: 1.5%;
+}
+.diociseInfo{
+  margin-top: 3%;
+}
+
+
+/* -------------------------------------end of main------------------------------------- */
+
+
+
+
+
+
+
+
+/* ---------------------------------------------end of diocise--------------------------------------------- */
+
+
